@@ -1,0 +1,715 @@
+.right-sidebar{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  width: 546px;
+}
+
+.top-container{
+  background-color: rgba(18, 18, 18, 1);
+  padding-top: 60px;
+  padding-left: 33px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+ 
+  border-bottom:1px solid rgb(58, 58, 58);
+}
+
+
+.user-container{
+  display: flex;
+  align-items: top;
+  margin-bottom: 0;
+
+
+}
+
+.profile-picture{
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+}
+
+.profile-picture img{
+  width: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.profile-picture:hover .overview{
+  transition-delay: 1s;
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.overview{
+  transition-delay: 5s;
+  position: absolute;
+  left: -0px;
+  background-color: rgb(32, 32, 32);
+  width: 280px;
+  box-shadow: 0px 0px 17px rgba(0,0,0,0.15);
+  border-radius:10px ;
+  padding: 20px 20px 5px 20px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  z-index: 200;
+}
+
+
+.top-overview{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-overview img{
+  width: 45px;
+  height: 45px;
+}
+
+.top-overview button{
+  color: rgb(239, 239, 239);
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 15px;
+    height:41px;
+    cursor: pointer;
+    border: none;
+  transition: background-color 0.15s;
+}
+
+.top-overview button:hover{
+  background-color: rgba(255, 1, 1, 0.042);
+}
+
+
+.middle-overview{
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.middle-overview h6{
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.middle-overview p{
+  font-size: 14px;
+  font-weight: 60;
+  margin-top: 0;
+  margin-bottom: -6px;
+}
+
+.bottom-overview{
+  margin-bottom:30px;
+}
+
+.bottom-overview p{
+  color: rgba(255, 255, 255, .9) ;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.bottom-overview span{
+  margin-left: 5px;
+  font-weight: 100;
+  color: rgb(129, 129, 129);
+  margin-right: 10px;
+  margin-left: px;
+}
+
+.bottom2-overview p{
+  color: rgba(255, 255, 255, .9) ;
+  font-size: 15px;
+}
+
+.user-info{
+  position: relative;
+  cursor: pointer;
+  margin-left: 13px;
+  width: 440px;
+  height: 20px;
+}
+
+.user-top{
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  transition: text-decoration 0.15s;
+}
+
+.author:hover{
+  text-decoration: underline;
+
+}
+
+.user-top:hover .overview{
+  opacity: 0;
+}
+
+
+
+.author{
+  transition:  text-decoration 0.15s;
+}
+
+.user-top p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0px;
+  cursor: pointer;
+  transition: text-decoration 15s;
+}
+
+.user-top button{
+    color: rgb(239, 239, 239);
+    background-color: rgba(37, 37, 37, 1);
+    border-radius: 5px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 15px;
+    height:41px;
+    cursor: pointer;
+}
+
+.user-top button:hover{
+  border: 1px solid white;
+  background-color: rgba(18, 18, 18, 1);
+}
+
+.user-top i{
+  color: rgb(1, 230, 255);
+  margin-left: 5px;
+}
+
+.user-bottom{
+  margin-top: -28px;
+  font-size: 13px;
+  color: rgb(218, 218, 218);
+}
+
+.user-bottom p{
+
+}
+
+.user-bottom span{
+
+}
+
+.caption{
+  margin-top: 20px;
+  color: rgba(255, 255, 255, .9) ;
+
+}
+
+.caption span{
+  font-weight: bold;
+  transition: text-decoration 0.15s;
+  cursor: pointer;
+}
+
+.caption span:hover{
+  text-decoration: underline;
+}
+
+.music-container{
+  width: 230px;
+  transition: text-decoration 0.15s;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(255, 255, 255, .9) ;
+  cursor: pointer;
+}
+
+.music-container:hover{
+  text-decoration: underline;
+}
+
+.music-container i{
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.interactive-container{
+  height: 36px;
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 19px;
+}
+
+.interactive-left{
+  display: flex;
+}
+
+.interactive-left i{
+  color: white;
+}
+
+.interactive-left button{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 33px;
+  height: 32px;
+  font-size: 17px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out 0s;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  margin-right: 6px;
+  color: rgba(255, 255, 255, 0.477);;
+  transition:background-color 0.15s ;
+  cursor: pointer;
+}
+
+.interactive-left button:hover{
+  background-color: rgb(36, 36, 36);
+}
+
+.interactive-left p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(191, 191, 191);
+  margin-top: 12px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.like,.comment{
+  display: flex;
+}
+
+.interactive-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.interactive-right button{
+  border-radius:  30px;
+ 
+}
+
+.embed:hover::before,.send:hover::before,.whatsup:hover::before,.facebook:hover::before,.twitter:hover::before{
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -48px;
+  background-color: rgb(75, 75, 75);
+  color:rgba(255, 255, 255, 0.9) ;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 9px 9px 9px 9px;
+  border-radius: 8px;
+  white-space: nowrap;
+
+}
+
+.at:hover::before,.smile:hover::before{
+  content: attr(data-tooltip);
+  position: absolute;
+  right: -70px;
+  top: -48px;
+  background-color: rgb(75, 75, 75);
+  color:rgba(255, 255, 255, 0.9) ;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 9px 9px 9px 9px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.embed::before,.send::before,.whatsup::before,.facebook::before,.twitter::before,.at::before,.smile::before{
+  transition: all 0.15s;
+}
+
+
+
+.embed{
+  background-color: rgb(56, 56, 56);
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.15s;
+}
+
+.embed i{
+  font-size: 11px;
+}
+
+
+.send{
+  color: rgb(255, 255, 255);
+  transition: all 0.15s;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(254, 44, 85);
+}
+
+.whatsup{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(37, 211, 102);
+  transition: all 0.15s;
+}
+
+.facebook{
+  color: rgb(0, 117, 250);
+ font-size: 24px;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  width: 22px;
+  height: 22px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color:rgb(255, 255, 255);
+  transition: all 0.15s;
+}
+
+.twitter{
+  color: rgb(255, 255, 255);
+  transition: all 0.15s;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+ background-color: rgb(29, 161, 242);
+}
+
+.share{
+   color: rgb(255, 255, 255);
+
+  border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  background-color: rgba(56, 56, 56, 1);
+  color: rgba(255, 255, 255, 0.75);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 7px 0px 5px 12px;
+  width: 387px;
+  font-size: 14px;
+  height: 34px;
+  white-space: nowrap;
+  margin-right: -5px;
+  z-index: 3;
+
+}
+
+.copy{
+  z-index: 1;
+  height: 34px;
+  font-weight: 700;
+  width: 100px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  line-height: 20px;background-color: rgba(255, 255, 255, 0.08);
+border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.copy:hover{
+  background-color: rgb(26, 26, 26);
+}
+
+.middle-container{
+  background-color: rgba(18, 18, 18, 1);
+  height: 445px;
+  transition: overflow-y 0.15s;
+  overflow-y: scroll;
+  overflow: hidden ;
+  border-bottom:1px solid rgb(58, 58, 58);
+
+}
+.middle-container:hover{
+  overflow-y: scroll;
+}
+
+html{
+  scroll-padding-top: 59px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.comment-container{
+  padding-top: 24px ;
+  padding-left: 33px;
+  padding-right: 30px;
+  display: flex;
+  align-items: top;
+  margin-bottom: -18px;
+}
+
+.commenter-pic{
+  width: 40px;
+  height: 50px;
+  position: relative;
+  transition: opacity 15s;
+}
+
+.commenter-pic img{
+  width: 40px;
+  border-radius: 30px;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.commenter-pic:hover .overview{
+  transition-delay: 1s;
+
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.commenter-info{
+  margin-left: 13px;
+  width: 440px;
+
+}
+
+.commenter{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-top: -15px;
+  font-weight: 600;
+  transition:  text-decoration 0.15s ;
+}
+
+.commenter p{
+  transition:  text-decoration 0.15s ;
+  cursor: pointer;
+}
+
+.commenter p:hover{
+  text-decoration: underline;
+}
+
+.commenter:hover i{
+  opacity: 0;
+}
+
+.commenter i{
+  opacity: 0;
+}
+
+.comment2{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-top: -27px;
+}
+
+.like2{
+  color: rgba(255, 255, 255, 0.5);
+  margin-top:16px;
+display: flex;
+align-items: center;
+flex-direction: column;
+cursor: pointer;
+
+}
+
+.like2 i{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.like2 p{
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+.commenter-date{
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: -40px;
+  color: rgb(144, 144, 144);
+}
+
+.commenter-date span{
+  color: rgb(137, 137, 137);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.more-replies{
+  transition:  text-decoration 0.15s ;
+
+  cursor: pointer;
+  color: rgb(132, 132, 132);
+ margin-top: 22px;
+ font-size: 14px;
+ font-weight: 600;
+}
+
+.more-replies:hover{
+  text-decoration: underline;
+}
+
+.bottom-container{
+  padding-top: 20px ;
+  padding-left: 33px;
+  padding-right: 30px;
+  background-color: rgba(18, 18, 18, 1);
+  height: 80px;
+  color: white;
+}
+.bottom-container input{
+  background-color: rgb(51, 51, 51);
+  color: white;
+  width: 328px;
+  height: 40px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+
+.bottom-container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 35px;
+  padding-bottom: 7px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(51, 51, 51);
+  display: inline-block;
+  margin-left: -10px;
+}
+.nice button{
+  color: white;
+  background-color: rgba(128, 128, 128, 0);
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 4px 6px 4px 6px;
+  border: none;
+  cursor: pointer;
+  transition:background-color 0.15s ;
+}
+
+.nice button:hover{
+  background-color: rgb(88, 88, 88);
+}
+.at{
+  position: relative;
+  transition: all 0.25s;
+}
+.smile{
+  margin-right: -22px;
+  position: relative;
+  transition: all 0.25s;
+}
+.post{
+  cursor: pointer;
+  margin-left: 12px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: gray;
+  font-weight: 600;
+  font-size: 13px;
+}
